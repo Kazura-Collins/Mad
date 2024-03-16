@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mad</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    button {
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 16px;
+      cursor: pointer;
+      border-radius: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>¿Seguiremos hablando?</h1>
+  <p>Sí, solo html, como sea...</p>
+  <button onclick="responder('sí')">Sí</button>
+  <button onclick="responder('no')">No</button>
+  <button onclick="responder('aplazar')">Aplazar</button>
+  <div id="respuesta"></div>
+
+  <script>
+    function responder(respuesta) {
+      var mensaje;
+      switch (respuesta) {
+        case 'sí':
+          mensaje = 'Está bien, me gusta hablarte, la mayor parte del tiempo.';
+          break;
+        case 'no':
+          mensaje = 'Entiendo, eliminaré tu número, chat, instagram y tiktok para no tener recordatorios de tu pérdida.';
+          break;
+        case 'aplazar':
+          mensaje = 'Está bien, puedes decidirlo después.';
+          break;
+        default:
+          mensaje = 'Lo siento, no entendí tu respuesta.';
+      }
+      document.getElementById('respuesta').innerText = mensaje;
+    }
+  </script>
+</body>
+</html>
