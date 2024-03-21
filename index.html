@@ -4,47 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mad</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      background-image: url("https://fondosanimados.com/wp-content/uploads/2023/02/kirby-anniversary-wallpaper-estatico.jpg");
-    }
-    button {
-      padding: 10px 20px;
-      margin: 10px;
-      font-size: 16px;
-      cursor: pointer;
-      border-radius: 20px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>¿Seguiremos hablando?</h1>
-  <p>Sí, solo html, como sea...</p>
+  <img src="titulo.png" id="titulo" alt="Mad's little space">
+  <div id="grupoMusica">
+    <button onclick="retroceder()" id="botonRetroceder">⏪</button>
+    <button onclick="reproducirMusica()" id="botonMusica">
+      <h1>Musiquita</h1>
+      <img src="https://media.tenor.com/GPMqRbwdDFkAAAAi/sleepy-sleeping.gif" id="gifMusica" alt="Play">
+    </button>
+    <button onclick="adelantar()" id="botonAdelantar">⏩</button>
+  </div>
+  
+  <p id="tecuento">Te cuento algo? <br> Da click las veces que quieras.</p>
   <button onclick="responder('sí')">Sí</button>
   <button onclick="responder('no')">No</button>
-  <button onclick="responder('aplazar')">Aplazar</button>
   <div id="respuesta"></div>
 
-  <script>
-    function responder(respuesta) {
-      var mensaje;
-      switch (respuesta) {
-        case 'sí':
-          mensaje = 'Está bien, me gusta hablarte, la mayor parte del tiempo.';
-          break;
-        case 'no':
-          mensaje = 'Entiendo, eliminaré tu número, chat, instagram y tiktok para no tener recordatorios de tu pérdida.';
-          break;
-        case 'aplazar':
-          mensaje = 'Está bien, puedes decidirlo después.';
-          break;
-        default:
-          mensaje = 'Lo siento, no entendí tu respuesta.';
-      }
-      document.getElementById('respuesta').innerText = mensaje;
-    }
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>

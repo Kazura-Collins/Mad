@@ -1,0 +1,79 @@
+/* Importa la fuente */
+@font-face {
+    font-family: 'Kirby Classic'; /* Nombre de la fuente */
+    src: url('kirby-classic.ttf') format('truetype'); /* Ruta a tu archivo de fuente */
+  }
+
+  @font-face {
+    font-family: 'Pulang'; /* Nombre de la fuente */
+    src: url('Pulang.ttf') format('truetype'); /* Ruta a tu archivo de fuente */
+  }
+  
+  /* Aplica la fuente al h1 */
+  h1 {
+    font-family: 'Kirby Classic', Arial, sans-serif; /* Usa la fuente personalizada, y si no está disponible, utiliza Arial o una fuente sans-serif de respaldo */
+    color: #5a002a;
+ }
+  
+  /* Aplica una fuente diferente al texto normal */
+  p {
+    font-family: 'Pulang', Arial, sans-serif; /* Usa la fuente Pulang, y si no está disponible, utiliza Arial o una fuente sans-serif de respaldo */
+    font-size: 22px; /* Cambiar el tamaño de la fuente */
+    -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: rgba(255, 255, 255, 0.185);
+  }
+  
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-image: url("https://fondosanimados.com/wp-content/uploads/2023/02/kirby-anniversary-wallpaper-estatico.jpg");
+  }
+  button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+  }
+
+  @media screen and (max-width: 900px) {
+    body {
+      background-image: url("https://s0.smartresize.com/wallpaper/525/162/HD-wallpaper-kirby-agua.jpg");
+      background-size: cover;
+    }
+  }
+
+  #contenedor {
+    text-align: center;
+  }
+  
+  button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'Pulang', 'Arial', sans-serif; /* Cambiar la fuente del texto */
+    font-size: 18px; /* Cambiar el tamaño de la fuente */
+  }
+  
+  #gifMusica {
+    width: 100px; /* ajusta este valor según sea necesario */
+    height: 90px;
+  }
+
+
+  #respuesta {
+    font-family: 'Pulang', 'Arial', sans-serif; /* Cambiar la fuente del texto */
+    font-size: 18px; /* Cambiar el tamaño de la fuente */
+    color: #c5007d; /* Cambiar el color del texto */
+    background-color: aliceblue;
+    border-radius: 10px;
+    margin-top: 10px; /* Agregar margen superior para separarlo de los botones */
+    padding: 10px;
+  }
+
+#titulo {
+    max-width: 100%;
+    height: auto;
+}
+
