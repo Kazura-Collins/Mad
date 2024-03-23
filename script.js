@@ -16,7 +16,7 @@ function responder(respuesta) {
 
 // Función para reproducir música
 function reproducirMusica() {
-  var canciones = ['cancion1.mp3', 'cancion2.mp3', 'cancion3.mp3', 'cancion4.mp3', 'cancion5.mp3'];
+  var canciones = ['cancion1.mp3', 'cancion2.mp3', 'cancion3.mp3', 'cancion4.mp3', 'cancion5.mp3', 'cancion6.mp3', 'cancion7.mp3', 'cancion8.mp3', 'cancion9.mp3', 'cancion10.mp3'];
   var randomIndex = Math.floor(Math.random() * canciones.length);
   var audio = new Audio('music/' + canciones[randomIndex]);
   audio.play();
